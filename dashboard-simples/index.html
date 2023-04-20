@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Dashboard-2023</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined"> menu </span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined"> search </span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">shopping_cart</span> LOJA
+          </div>
+          <span class="material-icons-outlined click" onclick="closeSidebar()"
+            >close</span
+          >
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">dashboard</span>Dashboard
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">inventory_2</span>Produtos
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">category</span>Categorias
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">groups</span>Comunidades
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">inventory</span>Iventário
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">trending_up</span>Planejamento
+          </li>
+        </ul>
+      </aside>
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <h3>PRODUTOS</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h2>250</h2>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>CATEGORIAS</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h2>50</h2>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>COMUNIDADES</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h2>101</h2>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>ALERTAS</h3>
+              <span class="material-icons-outlined">notifications</span>
+            </div>
+            <h2>98</h2>
+          </div>
+        </div>
+
+        <div class="charts">
+            <div class="charts-card">
+                <h2 class="chart-title"> Top 5 produtos Mais vendidos</h2>
+                <div id="bar-chart"></div>
+            </div>
+            <div class="charts-card">
+                <h2 class="chart-title"> 
+                    Ordens de compra</h2>
+                <div id="area-chart"></div>
+            </div>
+            
+            
+
+
+
+
+        </div>
+
+
+
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.39.0/apexcharts.min.js"></script>
+     
+    <script src="./script/index.js"></script>
+  </body>
+</html>
